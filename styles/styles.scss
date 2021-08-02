@@ -1,4 +1,54 @@
+//League Spartan
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&family=Spartan:wght@700&display=swap");
+//DM Sans
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
 
-#into{
-    background:BLUE;
+
+//Colors
+$light-gray: #e7ecef;
+$dark-blue: #274c77;
+$blue: #6096ba;
+$light-blue: #a3cef1;
+$gray: #8b8c89;
+
+
+body{
+    background-color: $light-blue; 
+
+    #header{
+        position: fixed;
+        width: 100%;
+        height: 100px;
+        z-index:10;
+        .navbar{
+            
+            height:100px;
+            //border:1px solid black;
+            background-color: $light-blue;
+
+            .navbar-nav{
+                font-family: 'Spartan';
+                font-weight: bolder;
+                justify-content:end;
+                margin-right:30px;
+        
+                a{
+                    color:$dark-blue;
+        
+                    &:hover{
+                        color:$gray;
+                    }
+        
+                }
+        
+            }
+        }
+    
+        
+    }
+    
+    #page{
+        margin:150px 0px 150px 0px;
+    }
 }
+
