@@ -4,6 +4,17 @@ body {
   background-color: #a3cef1;
 }
 
+body h1 {
+  font-family: 'Spartan';
+  padding: 10px 0px;
+  color: #274c77;
+}
+
+body p {
+  font-family: 'DM Sans';
+  padding: 10px 0px;
+}
+
 body #header {
   position: fixed;
   width: 100%;
@@ -30,10 +41,82 @@ body #header .navbar .navbar-nav a {
 }
 
 body #header .navbar .navbar-nav a:hover {
-  color: #8b8c89;
+  color: #e7ecef;
 }
 
 body #page {
-  margin: 150px 0px 150px 0px;
+  margin: 160px 0px 150px 0px;
+}
+
+body #page .btn {
+  background-color: #6096ba;
+  border-color: #6096ba;
+  font-family: 'DM Sans';
+  font-weight: bolder;
+  color: white;
+}
+
+body #page .btn:hover {
+  background-color: #274c77;
+  border-color: #274c77;
+}
+
+body #page .section {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 200px;
+}
+
+body #page .about {
+  text-align: right;
+}
+
+body #page .team {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #page .columns {
+  text-align: center;
+}
+
+body #page .pictures {
+  padding: 20px 0px;
+}
+
+body #page .image {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+body #page img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+}
+
+body #page .fit-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body #page .image-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #274c77;
+}
+
+body #page .socials {
+  color: #6096ba;
+}
+
+body #page .socials:hover {
+  text-decoration: none;
+  color: #274c77;
 }
 /*# sourceMappingURL=styles.css.map */
