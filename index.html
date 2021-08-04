@@ -30,18 +30,18 @@
 <body>
     <div id='header'>
         <div class='container'>
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top py-lg-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-lg-0">
                 <a class="navbar-brand" href="index.html">
-                    <img src="images/studyspacelogo.png" width=150px height= 150px alt="logo" class="logo-img d-inline-block">
+                    <img src="images/studyspacelogo.png" width=150px height=150px alt="logo" class="logo-img d-inline-block">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="#about">about</a>
-                    <a class="nav-item nav-link" href="#features">features</a>
-                    <a class="nav-item nav-link" href="#team">team</a>
+                    <a class="nav-item nav-link" href="#about">About</a>
+                    <a class="nav-item nav-link" href="#features">Features</a>
+                    <a class="nav-item nav-link" href="#team">Team</a>
                 </div>
                 </div>
             </nav>
@@ -52,9 +52,9 @@
         <div class='container'>
 
             <div class='row section'>
-                <div class='col-md-6'>
+                <div class='col-md-6' class='fade'>
                     <h1 id='intro'>StudySpace</h1>
-                    <p>A platform that aids students in studying. StudySpace provides students with an all-in-one approach,
+                    <p>A convenient and portable online tool provides students the ability to be organized and study more effectively. StudySpace provides students with an all-in-one approach,
                         the ability to manage to do lists, listen to music, set timers, and discuss 
                         with their peers, all in one space.
                     </p>
@@ -66,7 +66,7 @@
         
                 </div>
                 <div class='col-md-4 extension justify-content-center'>
-                    <div class="picture"><img src="images/extension.png"></div>
+                    <div class="picture"><img src="images/extension.png" style='border:1px solid #274c77'></div>
                 </div>
                 <a name='about'></a>
             </div>
@@ -77,43 +77,40 @@
                 <div class='col-md-4'>
                     <p>*Insert pic of extension*</p>
                 </div>
-                <div class='col-md-7 offset-1 about'>
+                <div class='col-md-7 offset-1 about' class='fade'>
                     <h1>About</h1>
                     <p>
-                        Think back to the countless times you have wished <b>“Why couldn’t all of my studying and school assignments 
+                        Think back to the countless times you have wished <b>“Why couldn’t all of my studying and school assignment 
                         deadlines be in one place?”</b> or <b>“How can I study more effectively with my time without getting distracted 
                         by switching through apps”? </b>
                     </p>
                     <br>
                     <p>This is why we - as students - decided to create a Chrome extension to solve this problem.</p>    
-
-
-                   
                 </div>
                 <a name='features'></a>
             </div>
 
-            <div class='row features'>
+            <div class='row features' class='fade'>
                 <h1>Features</h1>
                 <p>Upon opening up the extension, you will see many features including, a digital <b>To-do List</b> to manage and keep track of your homework. 
                     The <b>Music Manager</b> helps quickly control the music you want played while you study and will connect to your Spotify, Apple Music, or Google Music account.
                     The ability to change whatever <b>Wallpaper</b> you want as a background to study & finally a <b>Productivity Mode</b> which allows you to block applications.</p>
             </div>
-            <div class='row justify-content-center section columns'>
+            <div class='row justify-content-center section columns' class='fade'>
                 <div class=col-md-3>
-                    <p>Feature 1</p>
+                    <p>To-Do List</p>
                     <p>*Picture*</p>
                 </div>
                 <div class=col-md-3>
-                    <p>Feature 2</p>
+                    <p>Wallpaper</p>
                     <p>*Picture*</p>
                 </div>
                 <div class=col-md-3>
-                    <p>Feature 3</p>
+                    <p>Music Manager</p>
                     <p>*Picture*</p>
                 </div>
                 <div class=col-md-3>
-                    <p>Feature 4</p>
+                    <p>Productivity Mode</p>
                     <p>*Picture*</p>
                 </div>
                 <a name='team'></a>
@@ -134,7 +131,7 @@
                     
                 </div>
                 <div class="col-md-3">
-                    <div class="image"><img src="images/lauryne.jpeg" class="fit-image"></div>
+                    <div class="image"><img src="images/lauryne.jpeg" style='border:1px solid #274c77' class="fit-image"></div>
                     <p class="mt-2 text-center image-name">Lauryne Assa
                         <br>
                         <a class="socials" href="https://www.linkedin.com/in/lauryne-assa/" target='_blank'><i class="fab fa-linkedin fa-lg"></i></a>
@@ -153,7 +150,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="image"><img src="images/shayan.jpeg" class="fit-image"></div>
+                    <div class="image"><img src="images/shayan.jpeg" style='border:1px solid #274c77' class="fit-image"></div>
                     <p class="mt-2 text-center image-name">Shayan Rahman
                         <br>
                         <a class="socials" href="https://www.linkedin.com/in/shayan-rahman-89a414218/" target='_blank'><i class="fab fa-linkedin fa-lg"></i></a>
@@ -169,11 +166,47 @@
         
     </div>
     
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+        crossorigin="anonymous"></script>
+    <script>
+        $(window).on("load",function() {
+            function fade() {
+                var animation_height = $(window).innerHeight() * 0.25;
+                var ratio = Math.round( (1 / animation_height) * 10000 ) / 10000;
 
-	
-    
-    
-    
+                $('.fade').each(function() {
+                    
+                    var objectTop = $(this).offset().top;
+                    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+                    
+                    if ( objectTop < windowBottom ) {
+                        if ( objectTop < windowBottom - animation_height ) {
+                            $(this).html( 'fully visible' );
+                            $(this).css( {
+                                transition: 'opacity 0.1s linear',
+                                opacity: 1
+                            } );
+
+                        } else {
+                            $(this).html( 'fading in/out' );
+                            $(this).css( {
+                                transition: 'opacity 0.25s linear',
+                                opacity: (windowBottom - objectTop) * ratio
+                            } );
+                        }
+                    } else {
+                        $(this).html( 'not visible' );
+                        $(this).css( 'opacity', 0 );
+                    }
+                });
+            }
+            $('.fade').css( 'opacity', 0 );
+            fade();
+            $(window).scroll(function() {fade();});
+        });
+    </script>
     
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
