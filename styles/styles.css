@@ -86,36 +86,59 @@ body #page .pictures {
   padding: 20px 0px;
 }
 
-body #page .image {
+body #page .extension {
+  margin-left: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #page .picture img {
+  width: 450px;
+  height: 178px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+}
+
+body #page .picture img .image {
+  width: 450px;
+  height: 178px;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+body #page #team img {
+  width: 250px;
+  height: 250px;
+  border-radius: 5%;
+}
+
+body #page #team img .image {
   width: 250px;
   height: 250px;
   border-radius: 5%;
   margin: 0 auto;
 }
 
-body #page img {
-  width: 250px;
-  height: 250px;
-  border-radius: 5%;
-}
-
-body #page .fit-image {
+body #page #team .fit-image {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-body #page .image-name {
+body #page #team .image-name {
   font-size: 24px;
   font-weight: bold;
   color: #274c77;
 }
 
-body #page .socials {
+body #page #team .socials {
   color: #6096ba;
 }
 
-body #page .socials:hover {
+body #page #team .socials:hover {
   text-decoration: none;
   color: #274c77;
 }

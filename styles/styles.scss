@@ -97,37 +97,72 @@ body{
             padding:20px 0px;
         }
 
-        .image {
-            width: 250px;
-            height: 250px;
-            border-radius: 5%;
-            margin: 0 auto
-        }
-        img {
-            width: 250px;
-            height: 250px;
-            border-radius: 5%
+        .extension{
+            margin-left:10px;
+            justify-content:center;
         }
 
-        .fit-image {
-            width: 100%;
-            object-fit: cover;
+        .picture{
+
+            img{
+                width: 450px;
+                height: 178px;
+                border-radius: 15px;
+                overflow: hidden;
+                perspective: 1px;
+    
+                .image {
+                    width: 450px;
+                    height: 178px;
+                    border-radius: 5%;
+                    margin: 0 auto
+                }
+     
+            }
+
         }
 
-        .image-name {
-            font-size:24px;
-            font-weight: bold;
-            color:$dark-blue;
-        }
+        #team{
+            img{
+                width: 250px;
+                height: 250px;
+                border-radius: 5%;
+    
+                .image {
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 5%;
+                    margin: 0 auto
+                }
+     
+            }
+            
+            .fit-image {
+                width: 100%;
+                object-fit: cover;
+            }
 
-        .socials{
-            color:$blue;
-
-            &:hover{
-                text-decoration: none;
+            .image-name {
+                font-size:24px;
+                font-weight: bold;
                 color:$dark-blue;
             }
+    
+            .socials{
+                color:$blue;
+    
+                &:hover{
+                    text-decoration: none;
+                    color:$dark-blue;
+                }
+            }
+
         }
+        
+        
+        
+
+        
     }
 }
 
