@@ -46,7 +46,7 @@ body{
                     color:$dark-blue;
         
                     &:hover{
-                        color:$light-gray;
+                        color:$blue;
                     }
         
                 }
@@ -105,15 +105,15 @@ body{
         .picture{
 
             img{
-                width: 450px;
-                height: 178px;
+                width: 580px;
+                height: 343px;
                 border-radius: 15px;
                 overflow: hidden;
                 perspective: 1px;
     
                 .image {
-                    width: 450px;
-                    height: 178px;
+                    width: 580px;
+                    height: 343px;
                     border-radius: 5%;
                     margin: 0 auto
                 }

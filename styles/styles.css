@@ -99,8 +99,8 @@ body #page .extension {
 }
 
 body #page .picture img {
-  width: 450px;
-  height: 178px;
+  width: 580px;
+  height: 343px;
   border-radius: 15px;
   overflow: hidden;
   -webkit-perspective: 1px;
@@ -108,8 +108,8 @@ body #page .picture img {
 }
 
 body #page .picture img .image {
-  width: 450px;
-  height: 178px;
+  width: 580px;
+  height: 343px;
   border-radius: 5%;
   margin: 0 auto;
 }
