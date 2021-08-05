@@ -135,11 +135,11 @@
             </div>
             <div class='row section pictures justify-content-center'>
                 <div class="col-md-3">
-                    <div class="image"><img src="images/" class="fit-image"></div>
+                    <div class="image"><img src="images/Empty.PNG" style='border:1px solid #274c77' class="fit-image"></div>
                     <p class="mt-2 text-center image-name">Emily Saint
                         <br>
-                        <a class="socials" href="#" target='_blank'><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a class="socials" href="#" target='_blank'><i class="fab fa-github-square fa-lg"></i></a>
+                        <a class="socials" href="https://www.linkedin.com/in/emilysaint/" target='_blank'><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a class="socials" href="https://github.com/emilysaint" target='_blank'><i class="fab fa-github-square fa-lg"></i></a>
                     </p>
                     
                 </div>
@@ -154,11 +154,11 @@
                 </div>
 
                 <div class="col-md-3">
-                    <div class="image"><img src="images/" class="fit-image"></div>
+                    <div class="image"><img src="images/Rpic.PNG" style='border:1px solid #274c77' class="fit-image"></div>
                     <p class="mt-2 text-center image-name">Rishabh Sharma
                         <br>
-                        <a class="socials" href="" target='_blank'><i class="fab fa-linkedin fa-lg"></i></a>
-                        <a class="socials" href="" target='_blank'><i class="fab fa-github-square fa-lg"></i></a>
+                        <a class="socials" href="https://www.linkedin.com/in/rishabh2003sharma/" target='_blank'><i class="fab fa-linkedin fa-lg"></i></a>
+                        <a class="socials" href="https://github.com/ri3habh" target='_blank'><i class="fab fa-github-square fa-lg"></i></a>
                     </p>
                 </div>
 
@@ -178,48 +178,9 @@
     <div id='footer'>
         
     </div>
-    
-    <!-- JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
-        crossorigin="anonymous"></script>
-    <script>
-        $(window).on("load",function() {
-            function fade() {
-                var animation_height = $(window).innerHeight() * 0.25;
-                var ratio = Math.round( (1 / animation_height) * 10000 ) / 10000;
 
-                $('.fade').each(function() {
-                    
-                    var objectTop = $(this).offset().top;
-                    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-                    
-                    if ( objectTop < windowBottom ) {
-                        if ( objectTop < windowBottom - animation_height ) {
-                            $(this).html( 'fully visible' );
-                            $(this).css( {
-                                transition: 'opacity 0.1s linear',
-                                opacity: 1
-                            } );
-
-                        } else {
-                            $(this).html( 'fading in/out' );
-                            $(this).css( {
-                                transition: 'opacity 0.25s linear',
-                                opacity: (windowBottom - objectTop) * ratio
-                            } );
-                        }
-                    } else {
-                        $(this).html( 'not visible' );
-                        $(this).css( 'opacity', 0 );
-                    }
-                });
-            }
-            $('.fade').css( 'opacity', 0 );
-            fade();
-            $(window).scroll(function() {fade();});
-        });
-    </script>
+    <!-- J Query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     
     <!-- Bootstrap Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
