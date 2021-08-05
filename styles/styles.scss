@@ -108,7 +108,7 @@ body{
             justify-content:center;
         }
 
-        .picture{
+        .pictureextension{
 
             img{
                 width: 530px;
@@ -125,7 +125,36 @@ body{
                 }
      
             }
+        }
 
+        .pictureabout{
+
+            img{
+                width: 530px;
+                height: 335px;
+                border-radius: 15px;
+                overflow: hidden;
+                perspective: 1px;
+    
+                .image {
+                    width: 530px;
+                    height: 335px;
+                    border-radius: 5%;
+                    margin: 0 auto
+                }
+     
+            }
+
+        }
+
+        .iconfeatures{
+            color: $blue;
+        }
+
+        .columns{
+            p{
+                font-family: 'Spartan';
+            }
         }
 
         #team{

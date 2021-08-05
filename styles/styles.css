@@ -100,7 +100,7 @@ body #page .extension {
           justify-content: center;
 }
 
-body #page .picture img {
+body #page .pictureextension img {
   width: 530px;
   height: 313px;
   border-radius: 15px;
@@ -109,11 +109,35 @@ body #page .picture img {
           perspective: 1px;
 }
 
-body #page .picture img .image {
+body #page .pictureextension img .image {
   width: 530px;
   height: 313px;
   border-radius: 5%;
   margin: 0 auto;
+}
+
+body #page .pictureabout img {
+  width: 530px;
+  height: 335px;
+  border-radius: 15px;
+  overflow: hidden;
+  -webkit-perspective: 1px;
+          perspective: 1px;
+}
+
+body #page .pictureabout img .image {
+  width: 530px;
+  height: 335px;
+  border-radius: 5%;
+  margin: 0 auto;
+}
+
+body #page .iconfeatures {
+  color: #6096ba;
+}
+
+body #page .columns p {
+  font-family: 'Spartan';
 }
 
 body #page #team img {
